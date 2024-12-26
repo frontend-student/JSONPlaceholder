@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body>
+    <div class="gsap m-auto px-11">
+      <nav
+        class="bg-blue-500 py-2 text-white flex justify-center items-center sticky top-0"
+
+      >
+
+
+        <a class="underline" href="#"
+          >Check my new project 💧 MistCSS write React components with 50% less
+          code</a
+        >
+      </nav>
+
+
+      <div class="flex gap-4 justify-around py-6">
+        <h1 class="font-bold">JSONPlaceholder</h1>
+
+        <ul class="flex gap-5 px-5 max-[600px]:hidden">
+          <li><a href="#">Guide</a></li>
+          <li><a href="#">Sponsor this project</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#"> My JSON Server</a></li>
+        </ul>
+        <i class="ri-menu-3-line hidden max-[600px]:block "></i>
+      </div>
+
+      <!--  -->
+
+      <section class="pr-11 mx-auto max-w-4xl h-full">
+        <div class="pt-20">
+          <h2 class="text-6xl">{JSON} Placeholder</h2>
+          <p class="pt-10 text-[25px]">
+            Free fake and reliable API for testing and prototyping.
+          </p>
+          <p class="text-[25px] pt-5">
+            Powered by <a href="#" class="underline">JSON Server</a> +
+            <a href="#" class="underline">LowDB.</a>
+          </p>
+
+          <p class="font-bold text-[14px] py-7">
+            Serving ~3 billion requests each month.
+          </p>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section class="pr-11 mx-auto max-w-4xl h-full pt-48">
+        <h1 class="text-[56px]">Sponsors</h1>
+        <p class="pt-7">
+          JSONPlaceholder is supported by the following companies and
+          <a href="#" class="underline">Sponsors</a> on GitHub, check them out
+          💖
+        </p>
+
+        <div class="pt-11">
+          <a href="#">
+            <img
+              src="https://jsonplaceholder.typicode.com/mockend.svg"
+              class="h-[100px] max-[600px]:h-[200px] object-cover object-center"
+              alt="not found"
+            />
+          </a>
+        </div>
+
+        <div class="pt-10">
+          <a href="#">
+            <img
+              src="https://github.com/typicode/json-server/assets/5502029/928b7526-0fdf-46ae-80d9-27fa0ef5f430"
+              alt=" not found"
+              class="h-[100px]"
+            />
+          </a>
+        </div>
+
+        <p class="pt-10">
+          <a href="#" class="underline">Your company logo here</a>
+        </p>
+      </section>
+
+      <!--  -->
+      
+      <section class="pr-11 mx-auto max-w-4xl h-full pt-48">
+        <h3 class="text-[45px]">Try it</h3>
+        <p class="py-6">Run this code here, in a console or from any site:</p>
+
+        <img src="./photos/haf.png" alt="" />
+        <div class="py-8">
+          <button
+            id="changebtn"
+            class="bg-slate-950 text-white px-4 rounded-md font-bold py-2 hover:bg-slate-800"
+          >
+            Run script
+          </button>
+        </div>
+        <img id="imgs" class="hidden" src="./photos/ful.png" alt="" />
+        <p class="pt-4 hidden" id="pcong">
+          Congrats! You've made your first call to JSONPlaceholder. 😃 🎉
+        </p>
+      </section>
+
+      <!--  -->
+
+      <section class="pr-[0.75rem] mx-auto max-w-4xl h-full pt-48">
+        <h4 class="text-[45px]">When to use</h4>
+        <p class="pt-3 pb-40">
+          JSONPlaceholder is a free online REST API that you can use whenever
+          you need some fake data. It can be in a README on GitHub, for a demo
+          on CodeSandbox, in code examples on Stack Overflow, ...or simply to
+          test things locally.
+        </p>
+
+        <h5 class="text-[45px]">Resources</h5>
+        <p class="py-5">
+          JSONPlaceholder comes with a set of 6 common resources:
+        </p>
+        <!-- use tables -->
+
+        <div class="py-5">
+          <table class="table-auto">
+            <thead>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-4 pb-1"><a href="">/posts</a></td>
+                <td class="px-4 pb-1">100 posts</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1"><a href="">/comments</a></td>
+                <td class="px-4 pb-1">500 comments</td>
+              </tr>
+
+              <tr>
+                <td class="px-4 pb-1"><a href="">/albums</a></td>
+                <td class="px-4 pb-1">100 albums</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1"><a href="">/photos</a></td>
+                <td class="px-4 pb-1">5000 photos</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1"><a href="">/todos</a></td>
+                <td class="px-4 pb-1">200 todos</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1"><a href="">/users</a></td>
+                <td class="px-4 pb-1">100 users</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="pb-48">
+          <span class="font-bold">Note:</span> resources have relations. For
+          example: posts have many comments, albums have many photos, ... see
+          guide for the full list.
+        </p>
+      </section>
+
+      <!--  -->
+  
+      <section class="pr-[0.75rem] mx-auto max-w-4xl h-full pt-32">
+        <h2 class="pb-5 text-[46px]">Routes</h2>
+
+        <p class="pb-5">
+          All HTTP methods are supported. You can use http or https for your
+          requests.
+        </p>
+        <!-- use tables -->
+        <div class="pb-5">
+          <table class="table-auto">
+            <thead>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-4 pb-1">GET</td>
+                <td class="px-4 pb-1">/posts</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1">GET</td>
+                <td class="px-4 pb-1">/posts/1</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1">GET</td>
+                <td class="px-4 pb-1">/posts/1/comments</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1">GET</td>
+                <td class="px-4 pb-1">/comments?postld=1</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1">POST</td>
+                <td class="px-4 pb-1">/posts</td>
+              </tr>
+
+              <tr>
+                <td class="px-4 pb-1">PUT</td>
+                <td class="px-4 pb-1">/posts/1</td>
+              </tr>
+              <tr>
+                <td class="px-4 pb-1">PATCH</td>
+                <td class="px-4 pb-1">/posts/1</td>
+              </tr>
+
+              <tr>
+                <td class="px-4 pb-1">DELETE</td>
+                <td class="px-4 pb-1">/posts/1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="">
+          <samp class="font-bold text-[15px]">Note:</samp> see
+          <a href="#" class="underline"> guide</a> for usage examples.
+        </p>
+      </section>
+
+      <!--  -->
+
+      <section class="pr-[0.75rem] mx-auto max-w-4xl h-full pt-32">
+        <h2 class="text-[46px]">Use your own data</h2>
+        <p class="pt-5">
+          With our sponsor <a href="#" class="underline">Mockend</a> and a
+          simple GitHub repo, you can have your own fake online REST server in
+          seconds.
+        </p>
+
+        <div class="pt-20">
+          <a href="#" class="underline font-bold"
+            >You can sponsor this project (and others) on GitHub</a
+          >
+        </div>
+
+        <p class="py-5">
+          Coded and maintained with ❤️ by
+          <a href="#" class="underline">typicode</a> © 2024
+        </p>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="json.js"></script>
+  </body>
+</html>
